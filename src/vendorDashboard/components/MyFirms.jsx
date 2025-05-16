@@ -12,7 +12,7 @@ const MyFirms = () => {
     const fetchFirms = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:4000/api/firms/my-firms', {
+        const res = await axios.get('https://mess-cards-backend.onrender.com/', {
           headers: {
             Authorization: `Bearer ${token}`
           }

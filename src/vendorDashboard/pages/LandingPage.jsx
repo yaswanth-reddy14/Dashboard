@@ -66,7 +66,7 @@ const LandingPage = () => {
                 return;
             }
 
-            const response = await axios.get('http://localhost:4000/vendor/firms', {
+            const response = await axios.get('https://mess-cards-backend.onrender.com/', {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setFirms(response.data.firms);

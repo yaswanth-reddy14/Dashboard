@@ -11,7 +11,7 @@ const ShowMesses = () => {
       const token = localStorage.getItem('token'); // Make sure token is saved after login
 
       try {
-        const response = await fetch('https://mess-cards-backend.onrender.com/', {
+        const response = await fetch('http://localhost:4000/api/firms/my-firms', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
